@@ -47,7 +47,7 @@ public class OmaArrayList {
      */
     public OmaArrayList(int alkuKapasiteetti) {
         sisalto = new int[alkuKapasiteetti];
-        koko = alkuKapasiteetti;
+        koko = 0;
     }
 
     /**
@@ -106,7 +106,11 @@ public class OmaArrayList {
      * sen koko on 0.
      */
     public void tyhjenna() {
-        // Tämä metodi on tarkoituksella tyhjä, jotta testi epäonnistuu. Toteuta metodi.
+        for (int i = 0; i < koko - 1; i++) {
+            sisalto[i] = 0;
+        }
+        koko = 0;
+
     }
 
     /**
@@ -178,7 +182,7 @@ public class OmaArrayList {
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 
     /**
@@ -215,6 +219,7 @@ public class OmaArrayList {
             sisalto[i] = sisalto[i + 1];
         }
         sisalto[koko - 1] = 0;
+        koko = koko-1;
 
         return poistettava;
     }

@@ -2,8 +2,6 @@ package fi.utu.tko2116;
 
 import fi.utu.tko2116.lista.OmaArrayList;
 
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -22,7 +20,7 @@ public class Main {
             System.out.println("Arvoa ei ole listassa!");
         }
 
-        int x = o.poista(0);
+        o.poista(0);
 
         System.out.println("luvun 888 indeksi:"+o.indeksi(888));
         System.out.println();

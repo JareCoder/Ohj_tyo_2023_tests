@@ -2,7 +2,6 @@ import fi.utu.tko2116.lista.OmaArrayList;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class TestArrayListLisaysJaPoisto {
 
